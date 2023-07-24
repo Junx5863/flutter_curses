@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_keys_application_/pages/animated_text.dart';
+import 'package:flutter_keys_application_/pages/list_keys_pages.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,11 +12,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      // home: AnimatedText(),
+      home: ListKeysPage(),
     );
   }
 }
